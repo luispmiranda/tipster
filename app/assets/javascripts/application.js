@@ -16,3 +16,7 @@
 //= require_tree .
 hljs.tabReplace = '    '; //4 spaces
 hljs.initHighlightingOnLoad();
+
+$(document).ready(function(){
+    $('.span6 offset3 alert alert-success').delay(5000).fadeIn();
+});

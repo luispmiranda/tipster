@@ -47,7 +47,7 @@ class ListsController < ApplicationController
     if @list.update_attributes(params[:list])
       redirect_to @list, notice: 'List was successfully updated.'
     else
-      render action: "edit" 
+      render action: "edit"
     end
   end
 

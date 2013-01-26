@@ -15,18 +15,27 @@
 
 body {
   position: relative;
-  padding-top: 40px;
   height: 100%;
 
   #sidebar {
 	  background: white;
-	  padding: 20px 0px 20px 0px;
+	  padding: 40px 0px 20px 0px;
 	  width: 240px;
 	  bottom:0px;
 	  display:block;
 	  min-height: 100%;
-
+    position:fixed;
+    background-color: #2A2F34;
 	  height: 100%;
+    top: 40px;
+    border-right: 1px black solid;
+  }
+
+  #content {
+  top: 50px;
+  position: fixed;
+  left: 240px;
+  /*background-color: red;*/
   }
 }
 
@@ -101,4 +110,10 @@ margin: 10px;
 .btn {
 padding: 3px 5px;
 margin: 1px;
+}
+
+.alert-success {
+  margin-top: 5px;
+  color: #468847;
+  border: 0px;
 }

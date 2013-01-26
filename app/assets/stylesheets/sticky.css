@@ -7,7 +7,7 @@ html, body, .container, .content {
 }
 
 .proper-content {
-    padding-top: 40px; /* >= navbar height */
+    /* padding-top: 40px; /* >= navbar height */
     height: 100%;
 }
 
