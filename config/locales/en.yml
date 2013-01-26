@@ -1,0 +1,14 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  activity:
+    list:
+      create:  "%{author} created the list '%{title}'"
+      update:  "%{author} updated the list '%{title}'"
+      destroy: "List deleted"
+    tip:
+      create:  "%{author} added '%{title}' to '%{list}'"
+      update:  "%{author} updated '%{title}' at '%{list}'"
+      destroy: "%{author} deleted '%{title}' at '%{list}'"

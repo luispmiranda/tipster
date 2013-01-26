@@ -1,0 +1,33 @@
+<div class="row-fluid">
+  <div class="span8">
+    <h1><%= @list.title %></h1>
+  </div>
+
+  <div class="span4">
+    <div class="btn-group pull-right">
+      <%= link_to new_list_tip_path(@list) do %>
+        <button class="btn">
+          <i class="icon-plus"></i>
+          <span class="icon">New Tip</span>
+        </button>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span12">
+    <h2>Tips</h2>
+  </div>
+</div>
+
+<%= render 'table', :tips => @list.tips %>
+
+<div class="row-fluid">
+  <div class="span12">
+      <%= link_to @list do %>
+        <i class="icon-arrow-left"></i>
+        <span class="icon">Back</span>
+      <% end %>
+  </div>
+</div>

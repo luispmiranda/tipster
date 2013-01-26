@@ -1,0 +1,23 @@
+<h1>Editing list</h1>
+
+<%= render 'form' %>
+
+<div class="row-fluid">
+  <div class="span6">
+      <%= link_to lists_path do %>
+        <i class="icon-arrow-left"></i>
+        <span class="icon">Back</span>
+      <% end %>
+  </div>
+
+  <div class="span6">
+    <div class="pull-right">
+      <button class="btn">
+        <%= link_to @list do %>
+          <i class="icon-eye-open"></i>
+          <span class="icon">Show</span>
+        <% end %>
+      </button>
+    </div>
+  </div>
+</div>

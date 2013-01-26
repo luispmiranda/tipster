@@ -1,0 +1,41 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="/" class="logo"><%= image_tag("logo.png") %></a>
+
+
+      <div class="container nav-collapse">
+
+        <ul class="nav pull-right">
+
+          <li>
+            <div class="btn-group">
+              <% if user_signed_in? %>
+                  <%= link_to current_user do %>
+                  <button class="btn">
+                    <i class="icon-tasks"></i>
+                    <%= current_user.first_name %>
+                  </button>
+                  <% end %>
+                  <% end %>
+
+              <% if user_signed_in? %>
+                <%= link_to citygate.destroy_user_session_path, :method => :delete do %>
+                  <button class="btn">
+                    <%= image_tag 'glyphicons/lock.png', :class => 'icon' %>
+                    Sign Out
+                  </button>
+                <% end %>
+              <% else %>
+                <%= button_with_icon 'Sign In', citygate.new_user_session_path, 'glyphicons/unlock.png' %>
+
+                <%= button_with_icon 'Sign in with Twitter', '/users/auth/twitter', 'glyphicons/twitter.png' %>
+              <% end %>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <%= render 'layouts/flash' %>
+</div>
