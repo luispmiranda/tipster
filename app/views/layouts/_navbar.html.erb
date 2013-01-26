@@ -1,31 +1,40 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a href="/" class="logo"><%= image_tag("logo.png") %></a>
+      <a href="/" class="brand"><%#= image_tag("logo.png") %>tipster</a>
 
 
       <div class="container nav-collapse">
 
-        <ul class="nav pull-right">
+        <ul class="nav pull-left">
 
           <li>
             <div class="btn-group">
-              <% if user_signed_in? %>
+                            <% if user_signed_in? %>
                   <%= link_to current_user do %>
                   <button class="btn">
-                    <i class="icon-tasks"></i>
-                    <%= current_user.first_name %>
+                    <i class="icon-dashboard"></i>
                   </button>
-                  <% end %>
                   <% end %>
 
-              <% if user_signed_in? %>
-                <%= link_to citygate.destroy_user_session_path, :method => :delete do %>
+                  <%= link_to current_user do %>
                   <button class="btn">
-                    <%= image_tag 'glyphicons/lock.png', :class => 'icon' %>
-                    Sign Out
+                    <i class="icon-cog"></i>
                   </button>
-                <% end %>
+                  <% end %>
+
+                  <%#= link_to current_user do %>
+                  <button class="btn">
+                    <i class="icon-group"></i>
+                  </button>
+                  <#% end %>
+
+                  <%= link_to citygate.destroy_user_session_path, :method => :delete do %>
+                  <button class="btn">
+                    <i class="icon-signout"></i>
+                  </button>
+                  <% end %>
+
               <% else %>
                 <%= button_with_icon 'Sign In', citygate.new_user_session_path, 'glyphicons/unlock.png' %>
 
