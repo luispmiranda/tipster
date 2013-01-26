@@ -43,7 +43,7 @@
 
     <%= render 'layouts/navbar' %>
 
-    <div class="container" id="main">
+    <div class="container">
       <div class="content">
 
         <div class="wrapper">
@@ -130,7 +130,7 @@
         </div><!-- /.wrapper -->
 
         <div class="footer-wrapper">
-          <footer>&copy; Tipster 2013</footer>
+          <footer></footer>
         </div>
       </div>
     </div>
