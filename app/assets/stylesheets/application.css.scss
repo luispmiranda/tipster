@@ -19,7 +19,7 @@ body {
 
   #sidebar {
 	  background: white;
-	  padding: 40px 0px 20px 0px;
+	  padding: 20px 0px 20px 0px;
 	  width: 240px;
 	  bottom:0px;
 	  display:block;
@@ -107,13 +107,41 @@ margin-top: 10px;
 margin: 10px;
 }
 
+/* bootstrap overrides */
+
 .btn {
-padding: 3px 5px;
+padding: 2px 4px;
+padding-top: 2px;
 margin: 1px;
+
 }
 
 .alert-success {
   margin-top: 5px;
   color: #468847;
   border: 0px;
+}
+
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 100%;
+  margin: 0px;
+  padding: 0px 15px;
+
+}
+
+/* menu */
+.nav-list > li > a,
+.nav-list .nav-header {
+  margin-right: -15px;
+  margin-left: -15px;
+  color: white;
+  text-shadow: none;
+}
+
+.nav-list > li > a {
+  padding: 3px 15px;
+  color: #468847;
+
 }
