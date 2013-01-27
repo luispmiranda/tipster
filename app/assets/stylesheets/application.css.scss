@@ -29,6 +29,11 @@ body {
 	  height: 100%;
     top: 40px;
     border-right: 1px black solid;
+
+
+    background-image:url('/assets/bg-navbar.png');
+    background-repeat:repeat;
+    background-position:right top;
   }
 
   #content {
@@ -136,12 +141,23 @@ margin: 1px;
 .nav-list .nav-header {
   margin-right: -15px;
   margin-left: -15px;
-  color: white;
+  color: #ABB9BF;
   text-shadow: none;
+  font-size: 12px;
+  font-family: Arial;
 }
 
 .nav-list > li > a {
   padding: 3px 15px;
-  color: #468847;
+  color: #ABB9BF;
+}
 
+.nav-list .divider {
+  *width: 100%;
+  height: 1px;
+  margin: 9px 1px;
+  *margin: -5px 0 5px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #ffffff;
 }
