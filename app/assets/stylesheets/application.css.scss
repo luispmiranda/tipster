@@ -168,3 +168,36 @@ margin: 1px;
   background-color: #e5e5e5;
   border-bottom: 1px solid #ffffff;
 }
+
+
+/* user profile */
+
+.user {
+  margin: 20px;
+  width: 698px;
+  height: 165px;
+  position: relative;
+  background: white;
+  box-shadow: 0 1px 2px #534f4f;
+  border-radius: 4px;
+
+  .avatar {
+    float: left;
+  }
+
+  .info {
+      padding-left: 200px;
+      border: none;
+    h1 {
+      color: #534f4f;
+      margin: 15px 0 10px 0px;
+      font-size: 30px;
+      white-space: nowrap;
+    }
+
+    .followers {
+      color: #534f4f;
+      font-size: 12px;
+    }
+  }
+}
