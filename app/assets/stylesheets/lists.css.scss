@@ -1,3 +1,60 @@
 // Place all the styles related to the lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.tiplist {
+  margin-top: 10px;
+  border: 1px solid #E5E5E6;
+  width: 300px;
+  background: white;
+  box-shadow: 0 1px 2px #E5E5E6;
+  border-radius: 4px;
+}
+
+.tiplist .tipContainer {
+  margin: 0px;
+  border-bottom: 1px solid #E8E8E8;
+  position: relative;
+
+
+  .picture {
+    margin: 4px;
+
+    img {
+      margin: 0px;
+      display: block;
+      max-width: 100%;
+      position: relative;
+    }
+  }
+
+     h4.title {
+      color: #37373F;
+      font-size: 14px;
+      padding: 0em 0.75em 0em;
+      text-align: center;
+
+    }
+
+    .category {
+      position:absolute;
+      top:4px;
+      right:8px;
+    }
+
+    .author {
+      color: #A0A3A7;
+      font-size: 12px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .manage {
+      color: #A0A3A7;
+      font-size: 12px;
+      text-align: center;
+      font-weight: bold;
+      padding: 0em 0.75em 0.75em;
+    }
+}
