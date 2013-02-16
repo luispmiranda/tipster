@@ -1,22 +1,26 @@
-<h3><%= @user.full_name %>'s profile</h3>
-<i class='icon-eye-open'></i><%= link_to '    Follow', follow_user_path(@user), method: :post %>
+<div class="row">
+  <div class="user">
 
-<hr/>
+    <div class="avatar">
+        <img src="http://lorempixel.com/165/165" width="165" height="165" alt="Avatar">
+    </div>
+    <div class="info">
+      <h1><%= @user.first_name %></h1>
+            <%= link_to "#" do %>
+              <i class="icon-eye-open"></i>
+            <% end %>
+      <span class="followers">
 
-<h3><%= @user.full_name %>'s tiplists</h3>
+        FOLLOWING <%= @user.follows.length %> | FOLLOWERS <%= @user.follows.length %>
+      </span>
+    </div>
+</div>
 
-<% if @user.lists.empty? %>
+<div style="clear:both"/>
 
-This user still don't have any tiplist
-
-<% else %>
-
-<% @user.lists.each do |list| %>
-  <i class='icon-reorder'></i><%= link_to list.title, list %>
-<% end %>
-
-<% end %>
-
+<div class="row">
+<%= render 'lists/table', :lists => @user.lists %>
+</div>
 
 
 
